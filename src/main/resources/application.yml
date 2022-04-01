@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: '@project.artifactId@'
+    version: '@project.version@'
+  kafka:
+    bootstrap-servers: "localhost:29092"
+    streams:
+      application-id: stock-streams
+      auto-startup: true
+
+stock:
+  inbound: movimentacao.in
+  outbound: movimentacao.out
